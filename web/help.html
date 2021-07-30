@@ -1,0 +1,142 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device.width, initial-scale=1.0">
+<title>FAQs</title>
+<style>
+body{ 
+	font-family: Segoe Script;
+	/*background:url(backimg.jpg);*/
+	background-size: cover;
+  	background-position: center;
+}
+.container-fluid{
+width: 80%;
+margin: 0 auto;
+margin-top: 100px;
+}
+.container-fluid h2{
+color:#8b008b
+/* position: relative; */
+/* width: 23rem; */
+}
+.container-fluid h2::after{
+content:" ";
+position: absolute;
+bottom: 0;
+right: 12px;
+width: 67px;
+height: 2px;
+}
+.accordion {
+width: 100%;
+padding: 0 5px;
+border: 2px solid #8b008b;
+cursor: pointer;
+border-radius: 50px;
+display: flex;
+margin: 10px 0;
+align-items: center;
+}
+.accordion .icon{
+margin: 0 10px 0 0;
+width: 30px;
+height: 30px;
+/*background: url(newpic.jpg) no-repeat 8px 8px #cfcfc4;*/
+border-radius: 50%;
+float: left;
+transition: all .5s ease-in;
+}
+.accordion h5{
+	font-size: 25px;
+	margin:0;
+	padding: 3px 0 0 0;
+	font-weight: normal;
+	color:lavender;
+}
+.panel{
+padding: 0 15px;
+border-left: 1px solid #B90E0A;
+margin-left: 25px;
+font-size: 20px;
+text-align: justify;
+overflow: hidden;
+max-height: 0;
+transition: all .5s ease-in;
+}
+
+</style>
+</head>
+<body class="" style="color:antiquewhite; background: url('img/i11.jpg') no-repeat;  background-size: 100%; ">
+	<div class="container-fluid">
+	<h2>Frequently Asked Questions(FAQs)</h2>
+	<div class="accordion">
+	<div class="icon"></div>
+	<h5>I have a wedding in my family. How can ShimmerNShine help?</h5>
+	</div>
+	<div class="panel">
+	<p>ShimmerNShine is a marketplace and a discovery platform for venues and vendors.<br>
+	     We are a one stop shop for all your wedding/event requirements and can connect you to the<br> 
+	     right options based on your requirements. In a nut shell, we make it convenient for you to plan
+                   your event.<br> Our platform will allow you to do three things:<br>
+		1.Find venues/vendors, you may not know of, based on your specific requirements.<br> 
+		Not just that, we can provide you with answers to all your questions about the particular<br>
+	              venue/vendor, including pricing information.<br>
+		2.Get availability of multiple venues/vendors at once, instead of you doing the legwork yourself.<br>
+		3.Get negotiated prices across venue/vendors categories in order to make an informed <br>
+		  decision. We take away the hassle of individually negotiating with several venues and<br>
+		  vendors in order to plan your event. With Weddingz.in you get that at once and makebr>
+		  the right decision.</p>
+	</div>
+
+	<div class="accordion">
+	<div class="icon"></div>
+	<h5>Do you only plan weddings?Are you wedding planners?</h5>
+	</div>
+	<div class="panel">
+	<p>We are an aggregator of wedding venues and services. We connect out customers to the right venue/vendor
+	  or service depending on their specific requirements or budget.We can connect customers to wedding planners if they are looking for one.</p>
+	</div>
+	<div class="accordion">
+	<div class="icon"></div>
+	<h5>Do you provide services other than venues?</h5>
+	</div>
+	<div class="panel">
+	<p>Yes, we have a comprehensive listing of other wedding services and vendors including but not limited<br>
+		 to photographers, decorators, caterers, mehendi artists, make-up artists, transport providers, <br>
+		entertainers, etc. Happy to put together a team of people who will make your special day a grand success.</p>
+	</div>
+	<div class="accordion">
+	<div class="icon"></div>
+	<h5>How can we contact ShimmerNShine?</h5>
+	</div>
+	<div class="panel">
+	<p>You can write to us at info@shimmerNshine.in or call us at +912249423758 and our customer service will be happy to help you☺</p>
+	</div>
+	<div class="accordion">
+	<div class="icon"></div>
+	<h5>Will hiring your event planning services work out to be expensive for me?</h5>
+	</div>
+	<div class="panel">
+	<p>It's a myth that a wedding planner is expensive! Our services are customized to suit your budget. Our extensive vendor network ensures that you get the best deals to suit your budget. With the benefits and savings in terms of time, money and effort that you will make, you can well recover the expense of hiring us.</p>
+	</div>
+	</div>
+	<script>
+	var acc= document.getElementsByClassName('accordion');
+var i;
+var len= acc.length;
+for(i= 0; i< len; i++){
+	acc[i].addEventListener('click',function() {
+	this.classList.toggle('active');
+	var panel=this.nextElementSibling;
+	if(panel.style.maxHeight){
+	panel.style.maxHeight= null;
+	} else {
+	panel.style.maxHeight= panel.scrollHeight+'px'
+}
+	})
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> ShimmerNShine </title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: Alan;
+}
+nav{
+  background: #836953;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #FF7994;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #FDFD96;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background-size: cover;
+  height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+.textonimage { 
+   position: relative; 
+   width: 100%;
+}
+h2 { 
+   position: absolute; 
+   top: 155px; 
+   left: 0; 
+   width: 100%; 
+   column-gap: 40px;
+   font-family: sans-serif;
+   color: #ddd;
+  background-size: cover;
+  height: calc(100vh - 80px);
+  padding: 50px;
+}
+
+
+</style>
+  </head>
+  <body style="background: url(img/w2.jpg) no-repeat center; background-size: cover; background-attachment: fixed;">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Celebrate with ShimmerNShine </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="check.jsp">Book Now</a></li>
+        <li><a href="find.jsp">Booking Status</a></li>
+        <li><a href="review.html">Review Us</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="adlogin.jsp">Admin</a></li>
+      </ul>
+    </nav>
+    <section></section>
+      <h2>
+     <p><span>"We were very worried about our wedding preparations. It is not easy to plan one.</br>But shimmerNShine cover it all. The kind of professionalism they show is commendable."</br> Mr.&Mrs. Malhotra</span></p></br></br>
+
+     <p><span>"It has been 2 years since we got married, ShimmerNShine was new in business.</br>We were in dilemma to hire them or not.</br> Now looking back it seems it was the best decision we took.</br> Happy to be a part of Shimmer family."</br>Mr.&Mrs. Sharma</p></br></br>
+
+     <p><span>"It feels great to be a part of ShimmerNShine. </br> They did our wedding preparations, I think they'll do our silver jubilee anniversary as well".</br>Mr.&Mrs. Gupta</p></br></br>
+      </h2>
+
+
+
+</p>
+</body>
+</html>
